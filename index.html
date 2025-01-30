@@ -15,18 +15,24 @@
             extend: {
               colors: {
                 clifford: '#da373d',
-              }
+                'primry-clr': 'rgb(23, 152, 0, 1)',
             }
           }
         }
+      }
       </script>
 
+        <!-- Font Awasam Kit -->
+        <script src="https://kit.fontawesome.com/440d57e340.js" crossorigin="anonymous"></script>
+
+
+        
     <!-- Google Font CDN Added -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
 
-    <!-- Coustomized Font Style -->
+    <!--Coustomized Font Style-->
      <style>
 
         .sora-font{
@@ -35,21 +41,171 @@
      </style>
 </head>
 
-
-<body class="sora-font">
+<body>
+  <body class="sora-font">
     <!-- Header Section -->
-     <header>
-        <!-- Navbar Section -->
-         <nav>
+     <header class="bg-gradient-to-b from-[rgb(255,255,255)] to-[rgb(239,235,227)]">
+        
+      
+      
+      <!-- Navbar Section -->
 
+        <!-- Navbar/Nav Menu Related Section -->
+        <nav class="container mx-auto">
+          <div class="navbar bg-base-100">
+
+            
+            <div class="navbar-start">
+              <div class="my-[50px]">
+                <img class="w-40 h-14" src="c2-assets/logo-header.png" alt="">
+            </div>
+            </div>
+
+
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1 text-xl">
+                <li><a>Product </a></li>
+                <li><a>Services </a></li>
+                <li><a>Contact Us </a></li>
+              </ul>
+            </div>
+            <div class="navbar-end hidden lg:flex">
+              <i class="fa-solid fa-magnifying-glass mx-3"></i>
+              <i class="fa-solid fa-cart-shopping mx-3"></i>
+              <button class="text-xl py-2 px-7 rounded-xl border border-[#179800] mx-3" >Login</button>
+              <button class="bg-primry-clr text-xl text-white py-2 px-7 rounded-xl mx-3">Register</button>
+            </div>
+
+
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-20 w-20"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 10h16M4 14h16M4 18h16" />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                <li><a>Product</a></li>
+                <li><a>Services</a></li> 
+                <li><a>Contact Us</a></li>
+              </ul>
+            </div>
+
+
+
+
+          </div>
          </nav>
 
          <!-- Banner Section -->
-          <section></section>
+          <section class=" container mx-auto  mb-36">
+            <!--Text Title -->
+             <div>
+              <h1 class="text-6xl text-center font-bold mt-24 mb-8"> Freshness <span class="text-primry-clr">You Can <br>
+                Count</span> On, Prices You’ll Love!</h1>
+                <p class="text-xl text-center mb-9">Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br> staples, we’ve got you covered every day!</p>
+
+             </div>
+
+             <!-- Image -->
+              <div>
+                <img class="w-3/4 mx-auto" src="c2-assets/hero-vegetables.png" alt="">
+              </div>
+
+          </section>
+
      </header>
+
+
+
 
      <!-- Main Section -->
       <main>
+
+
+
+         <!-- Service Card Section-->
+          <div class="container mx-auto">
+
+                    <!-- Service Text-->
+         <div>
+          <h1 class="text-4xl text-primry-clr mb-12 font-bold">Services</h1>
+         </div>
+
+
+
+        <div class="px-4 mt-6 md:flex md:flex-1 justify-between items-center gap-6">
+           <!-- Service Card 1 -->
+           <div class="card bg-slate-400 w-full shadow-xl">
+
+            <div class="avatar flex justify-center items-center">
+              <div class="ring-primary ring-offset-base-100 w-24 rounded-full ring ring-offset-2 mt-8 mb-6">
+                <img class="bg-white" src="c2-assets/service.png" />
+              </div>
+            </div>
+
+
+
+            <div class="card-body items-center text-center">
+              <h2 class="card-title text-2xl">24/7 Services </h2>
+              <p>Enjoy farm-fresh vegetables delivered to your doorstep 24/7. Quality produce, always fresh, always available—your go-to for healthy eating!</p>
+            </div>
+          </div>
+
+           <!-- Service Card 2 -->
+           <div class="card bg-slate-400 w-full shadow-xl">
+
+            <div class="avatar flex justify-center items-center">
+              <div class="ring-primary ring-offset-base-100 w-24 rounded-full ring ring-offset-2 mt-8 mb-6">
+                <img class="bg-white" src="c2-assets/service.png" />
+              </div>
+            </div>
+
+
+
+            <div class="card-body items-center text-center">
+              <h2 class="card-title text-2xl">24/7 Services </h2>
+              <p>Enjoy farm-fresh vegetables delivered to your doorstep 24/7. Quality produce, always fresh, always available—your go-to for healthy eating!</p>
+            </div>
+          </div>
+
+
+           <!-- Service Card 3 -->
+           <div class="card bg-slate-400 w-full shadow-xl">
+
+            <div class="avatar flex justify-center items-center">
+              <div class="ring-primary ring-offset-base-100 w-24 rounded-full ring ring-offset-2 mt-8 mb-6">
+                <img class="bg-white" src="c2-assets/service.png" />
+              </div>
+            </div>
+
+
+
+            <div class="card-body items-center text-center">
+              <h2 class="card-title text-2xl">24/7 Services </h2>
+              <p>Enjoy farm-fresh vegetables delivered to your doorstep 24/7. Quality produce, always fresh, always available—your go-to for healthy eating!</p>
+            </div>
+          </div>
+
+        </div>
+            
+
+
+
+
+          </div>
+
+
 
       </main>
 
@@ -60,4 +216,8 @@
 
       </footer>
 </body>
+
+
+
+
 </html>
