@@ -38,6 +38,19 @@
         .sora-font{
             font-family: "Sora", serif;
         }
+
+        @keyframes infiniteScroll {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-50px); }
+    100% { transform: translateY(0); }
+  }
+  
+  .infinite-text {
+    animation: infiniteScroll 2s ease-in-out infinite;
+  }
+
+
+
      </style>
 </head>
 
@@ -111,7 +124,7 @@
           <section class=" container mx-auto  mb-36">
             <!--Text Title -->
              <div>
-              <h1 class="text-6xl text-center font-bold mt-24 mb-8"> Freshness <span class="text-primry-clr">You Can <br>
+              <h1 class="text-6xl text-center font-bold mt-24 mb-8 infinite-text"> Freshness <span class="text-primry-clr ">You Can <br>
                 Count</span> On, Prices You’ll Love!</h1>
                 <p class="text-xl text-center mb-9">Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br> staples, we’ve got you covered every day!</p>
 
@@ -136,6 +149,8 @@
 
          <!-- Service Card Section-->
           <div class="container mx-auto">
+
+
                       <!-- Service Text -->
           
           <div>
@@ -462,9 +477,73 @@
 
 
 
+
+         <!-- FAQ Section -->
+          <div class="container mx-auto mb-20 ">
+            <div class="hero bg-gradient-to-br from-[#53DB3A] via-[#A8E063] to-[#FFF7D6] rounded-2xl pr-4">
+              <div class="hero-content gap-32 flex-col lg:flex-row-reverse ">
+                <img
+                  src="c2-assets/faq.png"
+                  class="max-w-sm rounded-lg shadow-2xl" />
+                <div>
+                  <div class="collapse collapse-plus bg-base-200">
+                    <input type="radio" name="my-accordion-3" checked="checked" />
+                    <div class="collapse-title text-xl font-medium">Are your vegetables 100% organic?</div>
+                    <div class="collapse-content">
+                      <p>Yes! Our vegetables are organically grown without synthetic pesticides, chemicals, or GMOs for a healthier choice</p>
+                    </div>
+                  </div>
+                  <div class="collapse collapse-plus bg-base-200">
+                    <input type="radio" name="my-accordion-3" checked="checked" />
+                    <div class="collapse-title text-xl font-medium">Where do you source your vegetables from?</div>
+                    <div class="collapse-content">
+                      <p>We source our vegetables directly from local organic farms, ensuring they are fresh, pesticide-free, and sustainably grown.</p>
+                    </div>
+                  </div>
+                  <div class="collapse collapse-plus bg-base-200">
+                    <input type="radio" name="my-accordion-3" checked="checked" />
+                    <div class="collapse-title text-xl font-medium">How do you ensure the freshness of your vegetables?</div>
+                    <div class="collapse-content">
+                      <p>We follow a farm-to-table model, delivering vegetables within 24 hours of harvesting to maintain their natural freshness.</p>
+                    </div>
+                  </div>
+                  <div class="collapse collapse-plus bg-base-200">
+                    <input type="radio" name="my-accordion-3" checked="checked" />
+                    <div class="collapse-title text-xl font-medium">Do you offer home delivery?</div>
+                    <div class="collapse-content">
+                      <p>Yes! We provide fast and reliable home delivery so you can enjoy farm-fresh vegetables without any hassle.</p>
+                    </div>
+                  </div>
+                  <div class="collapse collapse-plus bg-base-200">
+                    <input type="radio" name="my-accordion-3" />
+                    <div class="collapse-title text-xl font-medium">How can I place an order?</div>
+                    <div class="collapse-content">
+                      <p>Simply browse our website, add your favorite vegetables to the cart, and proceed to checkout for a seamless ordering experience.</p>
+                    </div>
+                  </div>
+                  <div class="collapse collapse-plus bg-base-200">
+                    <input type="radio" name="my-accordion-3" />
+                    <div class="collapse-title text-xl font-medium">What payment methods do you accept?</div>
+                    <div class="collapse-content">
+                      <p>We accept credit/debit cards, mobile banking, and cash on delivery for your convenience</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+
+
+
+
+
+
+
+         <!-- Newslater Section -->
          <section class="mb-40 ">
 
-          <!-- Conatinr For Mooving -->
+          <!-- Conatinr For Moving -->
            <div class=" relative -mb-96 px-4">
 <!-- This is main subscriber worke remember it remember it again and again -->
 
@@ -537,6 +616,14 @@
             </div>
           </footer>
           </div>
+
+
+
+
+
+
+
+        
 
 </body>
 
